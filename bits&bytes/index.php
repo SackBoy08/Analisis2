@@ -43,7 +43,7 @@ error_reporting(0);
 <!-- /Header --> 
 
 <!-- Banners -->
-<!-- <section id="banner" class="banner-section">
+<section id="banner" class="banner-section">
   <div class="container">
     <div class="div_zindex">
       <div class="row">
@@ -56,7 +56,7 @@ error_reporting(0);
       </div>
     </div>
   </div>
-</section> -->
+</section>
 <!-- /Banners --> 
 
 
@@ -131,7 +131,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
+            <h2><i class="fa fa-memory" aria-hidden="true"></i>1200+</h2>
             <p>Productos disponibles</p>
           </div>
         </div>
@@ -139,7 +139,7 @@ foreach($results as $result)
       <div class="col-lg-3 col-xs-6 col-sm-3">
         <div class="fun-facts-m">
           <div class="cell">
-            <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
+            <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i>1000+</h2>
             <p>Suscriptores</p>
           </div>
         </div>
