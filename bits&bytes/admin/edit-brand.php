@@ -35,7 +35,7 @@ $msg="Actualización de marca exitosa";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Marca de actualización de administrador</title>
+	<title>Bits&Bytes | Actualización de Marcas</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

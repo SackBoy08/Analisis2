@@ -33,7 +33,7 @@ $msg="Datos de la página actualizados exitosamente";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches |Admin Gestionar testimonios   </title>
+	<title>Bits&Bytes |Admin Gestionar testimonios   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

@@ -33,7 +33,7 @@ $error="Algo salió mal. Inténtalo de nuevo";
 <html lang="es">
 <head>
 
-<title>Portal de alquiler de coches | Publicar testimonio</title>
+<title>Bits&Bytes | Publicar testimonio</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

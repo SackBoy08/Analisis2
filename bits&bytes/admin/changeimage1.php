@@ -37,7 +37,7 @@ $msg="Imagen actualizada exitosamente";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Imagen de actualización del administrador 1</title>
+	<title>Bits&Bytes | Imagen de actualización del administrador 1</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -87,12 +87,12 @@ $msg="Imagen actualizada exitosamente";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Imagen del vehículo 1 </h2>
+						<h2 class="page-title">Imagen del articulo 1 </h2>
 
 						<div class="row">
 							<div class="col-md-10">
 								<div class="panel panel-default">
-									<div class="panel-heading">Imagen del vehículo 1 Detalles</div>
+									<div class="panel-heading">Imagen del articulo 1 Detalles</div>
 									<div class="panel-body">
 										<form method="post" class="form-horizontal" enctype="multipart/form-data">
 										

@@ -13,7 +13,7 @@ else{
 <html lang="es">
 <head>
 
-<title>Portal de alquiler de coches | Mis testimonios </title>
+<title>Bits&Bytes | Mis testimonios </title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

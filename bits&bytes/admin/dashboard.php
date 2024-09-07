@@ -19,7 +19,7 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Panel de administración</title>
+	<title>Bits&Bytes | Panel de administración</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,7 +85,7 @@ $results1=$query1->fetchAll(PDO::FETCH_OBJ);
 $totalvehicle=$query1->rowCount();
 ?>
 													<div class="stat-panel-number h1 "><?php echo htmlentities($totalvehicle);?></div>
-													<div class="stat-panel-title text-uppercase">Listado de vehiculos</div>
+													<div class="stat-panel-title text-uppercase">Listado de Articulos</div>
 												</div>
 											</div>
 											<a href="manage-vehicles.php" class="block-anchor panel-footer text-center">Detalle completo &nbsp; <i class="fa fa-arrow-right"></i></a>

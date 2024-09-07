@@ -73,7 +73,7 @@ $msg="Datos actualizados exitosamente";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Administrador Editar información del vehículo</title>
+	<title>Bits&Bytes | Editar información del vehículo</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -121,7 +121,7 @@ $msg="Datos actualizados exitosamente";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Editar vehículo</h2>
+						<h2 class="page-title">Editar Articulo</h2>
 
 						<div class="row">
 							<div class="col-md-12">
@@ -144,7 +144,7 @@ foreach($results as $result)
 
 <form method="post" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
-<label class="col-sm-2 control-label">Título del vehículo<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Título del articulo<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="vehicletitle" class="form-control" value="<?php echo htmlentities($result->VehiclesTitle)?>" required>
 </div>
@@ -175,18 +175,18 @@ continue;
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Descripción general del vehículo<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Descripción general del articulo<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required><?php echo htmlentities($result->VehiclesOverview);?></textarea>
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Precio por día (en USD)<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Precio (en Q)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="priceperday" class="form-control" value="<?php echo htmlentities($result->PricePerDay);?>" required>
 </div>
-<label class="col-sm-2 control-label">Seleccione el tipo de combustible<span style="color:red">*</span></label>
+<!-- <label class="col-sm-2 control-label">Seleccione el tipo de combustible<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="fueltype" required>
 <option value="<?php echo htmlentities($result->FuelType);?>"> <?php echo htmlentities($result->FuelType);?> </option>
@@ -195,18 +195,18 @@ continue;
 <option value="Diesel">Diesel</option>
 <option value="CNG">CNG</option>
 </select>
-</div>
+</div> -->
 </div>
 
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Año del modelo<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Modelo<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" value="<?php echo htmlentities($result->ModelYear);?>" required>
 </div>
-<label class="col-sm-2 control-label">Número de asientos<span style="color:red">*</span></label>
+<!-- <label class="col-sm-2 control-label">Número de asientos<span style="color:red">*</span></label>
 <div class="col-sm-4">
-<input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required>
+<input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity);?>" required> -->
 </div>
 </div>
 <div class="hr-dashed"></div>								
@@ -233,7 +233,7 @@ Imagen 3<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage3);?>
 </div>
 
 
-<div class="form-group">
+<!-- <div class="form-group">
 <div class="col-sm-4">
 Imagen 4<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage4);?>" width="300" height="200" style="border:solid 1px #000">
 <a href="changeimage4.php?imgid=<?php echo htmlentities($result->id)?>">Cambiar imagen 4</a>
@@ -247,9 +247,9 @@ echo htmlentities("File not available");
 <img src="img/vehicleimages/<?php echo htmlentities($result->Vimage5);?>" width="300" height="200" style="border:solid 1px #000">
 <a href="changeimage5.php?imgid=<?php echo htmlentities($result->id)?>">Cambiar imagen 5</a>
 <?php } ?>
-</div>
+</div> -->
 
-</div>
+<!-- </div>
 <div class="hr-dashed"></div>									
 </div>
 </div>
@@ -384,9 +384,9 @@ echo htmlentities("File not available");
 <label for="inlineCheckbox3"> Ventanas eléctricas </label>
 </div>
 <?php } ?>
-</div>
+</div> -->
 
-
+<!-- 
 <div class="form-group">
 <div class="col-sm-3">
 <?php if($result->CDPlayer==1)
@@ -448,7 +448,7 @@ echo htmlentities("File not available");
 </div>
 <?php } ?>
 </div>
-</div>
+</div> -->
 
 <?php }} ?>
 

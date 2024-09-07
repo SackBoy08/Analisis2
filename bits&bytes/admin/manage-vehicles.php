@@ -32,7 +32,7 @@ $msg="Registro del vehículo eliminado con éxito";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches |Admin Administrar vehículos   </title>
+	<title>Bits&Bytes |Admin Administrar Articulos   </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -82,11 +82,11 @@ $msg="Registro del vehículo eliminado con éxito";
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Administrar vehículos</h2>
+						<h2 class="page-title">Administrar articulos</h2>
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">Detalles del vehículo</div>
+							<div class="panel-heading">Detalles del articulos</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>COMPLETADO</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -94,23 +94,23 @@ $msg="Registro del vehículo eliminado con éxito";
 									<thead>
 										<tr>
 										<th>#</th>
-											<th>Título del vehículo</th>
+											<th>Título del articulo</th>
 											<th>Marca </th>
-											<th>Precio por día</th>
-											<th>Tipo de combustible</th>
+											<th>Precio</th>
+											<!-- <th>Tipo de combustible</th>
 											<th>Año del modelo</th>
-											<th>Acción</th>
+											<th>Acción</th> -->
 										</tr>
 									</thead>
 									<tfoot>
 										<tr>
 										<th>#</th>
-										<th>Título del vehículo</th>
+										<th>Título del articulo</th>
 											<th>Marca </th>
-											<th>Precio por día</th>
-											<th>Tipo de combustible</th>
+											<th>Precio</th>
+											<!-- <th>Tipo de combustible</th>
 											<th>Año del modelo</th>
-											<th>Acción</th>
+											<th>Acción</th> -->
 										</tr>
 										</tr>
 									</tfoot>

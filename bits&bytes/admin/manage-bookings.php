@@ -49,7 +49,7 @@ $msg="Reserva confirmada con éxito";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches |Admin Gestionar testimonios  </title>
+	<title>Bits&Bytes |Admin Gestionar testimonios  </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -112,9 +112,9 @@ $msg="Reserva confirmada con éxito";
 										<tr>
 										<th>#</th>
 											<th>Nombre</th>
-											<th>Vehiculo</th>
-											<th>Desde la fecha</th>
-											<th>Hasta la fecha</th>
+											<th>Articulo</th>
+											<!-- <th>Desde la fecha</th>
+											<th>Hasta la fecha</th> -->
 											<th>Mensaje</th>
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
@@ -125,9 +125,9 @@ $msg="Reserva confirmada con éxito";
 										<tr>
 										<th>#</th>
 										<th>Nombre</th>
-											<th>Vehiculo</th>
-											<th>Desde la fecha</th>
-											<th>Hasta la fecha</th>
+											<th>Articulo</th>
+											<!-- <th>Desde la fecha</th>
+											<th>Hasta la fecha</th> -->
 											<th>Mensaje</th>
 											<th>Estado</th>
 											<th>Fecha de publicación</th>

@@ -8,7 +8,7 @@ include('includes/config.php');
 <html lang="es">
 <head>
 
-<title>Portal de alquiler de coches | Detalles de la página</title>
+<title>Bits&Bytes | Detalles de la página</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

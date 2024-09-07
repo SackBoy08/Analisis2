@@ -49,7 +49,7 @@ echo "<script type='text/javascript'> document.location = 'confirmed-bookings.ph
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Nuevas reservas  </title>
+	<title>Bits&Bytes | Nuevas reservas  </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -158,12 +158,12 @@ foreach($results as $result)
 											<th colspan="4" style="text-align:center;color:blue">Booking Details</th>
 										</tr>
 											<tr>											
-											<th>Nombre del vehículo</th>
+											<th>Nombre del Articulo</th>
 											<td><a href="edit-vehicle.php?id=<?php echo htmlentities($result->vid);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></td>
 											<th>Fecha para registrarse</th>
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 										</tr>
-										<tr>
+										<!-- <tr>
 											<th>Desde la fecha</th>
 											<td><?php echo htmlentities($result->FromDate);?></td>
 											<th>Hasta la fecha</th>
@@ -174,9 +174,9 @@ foreach($results as $result)
 	<td><?php echo htmlentities($tdays=$result->totalnodays);?></td>
 	<th>Renta por días</th>
 	<td><?php echo htmlentities($ppdays=$result->PricePerDay);?></td>
-</tr>
+</tr> -->
 <tr>
-	<th colspan="3" style="text-align:center">Gran Total</th>
+	<th colspan="3" style="text-align:center">Total</th>
 	<td><?php echo htmlentities($tdays*$ppdays);?></td>
 </tr>
 <tr>

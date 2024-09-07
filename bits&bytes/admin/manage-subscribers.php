@@ -32,7 +32,7 @@ $msg="Información del suscriptor eliminada";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches |Admin Gestionar suscriptores </title>
+	<title>Bits&Bytes | Admin Gestionar suscriptores </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">

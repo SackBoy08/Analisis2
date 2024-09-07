@@ -20,8 +20,8 @@ $seatingcapacity=$_POST['seatingcapacity'];
 $vimage1=$_FILES["img1"]["name"];
 $vimage2=$_FILES["img2"]["name"];
 $vimage3=$_FILES["img3"]["name"];
-$vimage4=$_FILES["img4"]["name"];
-$vimage5=$_FILES["img5"]["name"];
+// $vimage4=$_FILES["img4"]["name"];
+// $vimage5=$_FILES["img5"]["name"];
 $airconditioner=$_POST['airconditioner'];
 $powerdoorlocks=$_POST['powerdoorlocks'];
 $antilockbrakingsys=$_POST['antilockbrakingsys'];
@@ -92,7 +92,7 @@ $error="Algo salió mal. Inténtalo de nuevo";
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Vehículo de publicación administrativa</title>
+	<title>Bits&Bytes | Articulo de publicación administrativa</title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -141,7 +141,7 @@ $error="Algo salió mal. Inténtalo de nuevo";
 				<div class="row">
 					<div class="col-md-12">
 					
-						<h2 class="page-title">Publicar un vehículo</h2>
+						<h2 class="page-title">Publicar un articulo</h2>
 
 						<div class="row">
 							<div class="col-md-12">
@@ -153,7 +153,7 @@ $error="Algo salió mal. Inténtalo de nuevo";
 									<div class="panel-body">
 <form method="post" class="form-horizontal" enctype="multipart/form-data">
 <div class="form-group">
-<label class="col-sm-2 control-label">Título del vehículo<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Título del articulo<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="vehicletitle" class="form-control" required>
 </div>
@@ -180,18 +180,18 @@ foreach($results as $result)
 											
 <div class="hr-dashed"></div>
 <div class="form-group">
-<label class="col-sm-2 control-label">Descripción general del vehículo<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Descripción general del articulo<span style="color:red">*</span></label>
 <div class="col-sm-10">
 <textarea class="form-control" name="vehicalorcview" rows="3" required></textarea>
 </div>
 </div>
 
 <div class="form-group">
-<label class="col-sm-2 control-label">Precio por día (en USD)<span style="color:red">*</span></label>
+<label class="col-sm-2 control-label">Precio (en Q)<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="priceperday" class="form-control" required>
 </div>
-<label class="col-sm-2 control-label">Seleccione el tipo de combustible<span style="color:red">*</span></label>
+<!-- <label class="col-sm-2 control-label">Seleccione el tipo de combustible<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <select class="selectpicker" name="fueltype" required>
 <option value=""> Seleccionar </option>
@@ -199,12 +199,12 @@ foreach($results as $result)
 <option value="Petrol">Petroleo</option>
 <option value="Diesel">Diesel</option>
 <option value="CNG">CNG</option>
-</select>
+</select> -->
 </div>
 </div>
 
 
-<div class="form-group">
+<!-- <div class="form-group">
 <label class="col-sm-2 control-label">Año modelo<span style="color:red">*</span></label>
 <div class="col-sm-4">
 <input type="text" name="modelyear" class="form-control" required>
@@ -213,7 +213,7 @@ foreach($results as $result)
 <div class="col-sm-4">
 <input type="text" name="seatingcapacity" class="form-control" required>
 </div>
-</div>
+</div> -->
 <div class="hr-dashed"></div>
 
 
@@ -237,16 +237,16 @@ Imagen 3<span style="color:red">*</span><input type="file" name="img3" required>
 </div>
 
 
-<div class="form-group">
+<!-- <div class="form-group">
 <div class="col-sm-4">
 Imagen 4<span style="color:red">*</span><input type="file" name="img4" required>
 </div>
 <div class="col-sm-4">
 Imagen 5<input type="file" name="img5">
-</div>
+</div> -->
 
 </div>
-<div class="hr-dashed"></div>									
+<!-- <div class="hr-dashed"></div>									
 </div>
 </div>
 </div>
@@ -334,7 +334,7 @@ Imagen 5<input type="file" name="img5">
 <label for="leatherseats"> Asientos de cuero </label>
 </div>
 </div>
-</div>
+</div> -->
 
 
 

@@ -9,7 +9,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<title>Portal de alquiler de coches</title>
+<title>Bits&Bytes</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -64,8 +64,8 @@ error_reporting(0);
 <section class="section-padding gray-bg">
   <div class="container">
     <div class="section-header text-center">
-      <h2>Encuentra el mejor <span>Coche ParaTi</span></h2>
-      <p>Hay muchas variaciones de pasajes de Lorem Ipsum disponibles, pero la mayoría ha sufrido alguna alteración, mediante humor inyectado o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, debes asegurarte de que no haya nada vergonzoso escondido en medio del texto.</p>
+      <h2>Encuentra los mejores <span>Articulos Para Ti</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut necessitatibus id officia iste, dolore facilis ullam fuga facere reiciendis, cumque saepe. Nobis architecto corrupti ab sed itaque quos facilis? Rem!</p>
     </div>
     <div class="row"> 
       
@@ -95,8 +95,8 @@ foreach($results as $result)
 <div class="car-info-box"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" class="img-responsive" alt="image"></a>
 <ul>
 <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
-<li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> Modelo</li>
-<li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> Sillas</li>
+<!-- <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> Modelo</li>
+<li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> Sillas</li> -->
 </ul>
 </div>
 <div class="car-title-m">
@@ -132,7 +132,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>1200+</h2>
-            <p>Coches nuevos a la venta</p>
+            <p>Articulos nuevos a la venta</p>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@ foreach($results as $result)
         <div class="fun-facts-m">
           <div class="cell">
             <h2><i class="fa fa-car" aria-hidden="true"></i>1000+</h2>
-            <p>Venta de carros usados</p>
+            <p>Articulos</p>
           </div>
         </div>
       </div>

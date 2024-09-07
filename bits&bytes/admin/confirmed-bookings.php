@@ -21,7 +21,7 @@ else{
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
 	
-	<title>Portal de alquiler de coches | Reservas confirmadas  </title>
+	<title>Bits&Bytes | Reservas confirmadas  </title>
 
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -86,7 +86,7 @@ else{
 											<th>No. Reserva</th>
 											<th>Vehiculo</th>
 											<th>Desde la fecha</th>
-											<th>Hasta la fecha</th>
+											<!-- <th>Hasta la fecha</th> -->
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
 											<th>Acción</th>
@@ -99,7 +99,7 @@ else{
 											<th>No. Reserva</th>
 											<th>Vehiculo</th>
 											<th>Desde la fecha</th>
-											<th>Hasta la fecha</th>
+											<!-- <th>Hasta la fecha</th> -->
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
 											<th>Acción</th>

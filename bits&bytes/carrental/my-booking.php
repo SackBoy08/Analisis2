@@ -11,7 +11,7 @@ else{
 <html lang="en">
 <head>
 
-<title>Portal de alquiler de coches - Mi reserva</title>
+<title>Bits&Bytes - Mis reservas</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -158,11 +158,11 @@ foreach($results as $result)
 <h5 style="color:blue">Factura</h5>
 <table>
   <tr>
-    <th>Nombre del auto</th>
+    <th>Nombre del Articulo</th>
     <th>Desde la fecha</th>
     <th>Hasta la fecha</th>
-    <th>Total Días</th>
-    <th>Alquiler / Día</th>
+    <th>SubTotal</th>
+    <th>Precio</th>
   </tr>
   <tr>
     <td><?php echo htmlentities($result->VehiclesTitle);?>, <?php echo htmlentities($result->BrandName);?></td>
@@ -172,7 +172,7 @@ foreach($results as $result)
         <td> <?php echo htmlentities($ppd=$result->PricePerDay);?></td>
   </tr>
   <tr>
-    <th colspan="4" style="text-align:center;"> Gran Total</th>
+    <th colspan="4" style="text-align:center;"> Total</th>
     <th><?php echo htmlentities($tds*$ppd);?></th>
   </tr>
 </table>
