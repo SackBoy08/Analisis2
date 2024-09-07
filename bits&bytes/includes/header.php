@@ -75,7 +75,7 @@ foreach($results as $result)
               <li><a href="update-password.php">Actualiza contraseña</a></li>
             <li><a href="my-booking.php">Mis reservas</a></li>
             <li><a href="post-testimonial.php">Publicar un comentario</a></li>
-          <li><a href="my-testimonials.php">Mis COmpentario</a></li>
+          <li><a href="my-testimonials.php">Mis Comentario</a></li>
             <li><a href="logout.php">Salir</a></li>
             <?php } ?>
           </ul>
@@ -95,8 +95,8 @@ foreach($results as $result)
           <li><a href="index.php">Inicio</a>    </li>
           	 
           <li><a href="page.php?type=aboutus">Sobre nosotros</a></li>
-          <li><a href="#">Listado de componentes</a>
-          <li><a href="#">FAQs</a></li>
+          <li><a href="car-listing.php">Listado de componentes</a>
+          <li><a href="page.php?type=faqs">FAQs</a></li>
           <li><a href="contact-us.php">Contactenos</a></li>
 
         </ul>

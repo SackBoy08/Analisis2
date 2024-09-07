@@ -1354,7 +1354,7 @@ nav.navbar {
 	3.5. Fun-Facts
 -----------------------------*/
 .fun-facts-section {
-  background: rgba(0, 0, 0, 0) url("../images/fun-facts-bg.jpg") repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) url("../images/fun-facts-bgf.jpg") repeat scroll 0 0;
   padding: 100px 0;
   position: relative;
 }
@@ -1562,7 +1562,7 @@ nav.navbar {
 	3.8 Testimonial-Section
 -----------------------------*/
 .testimonial-section {
-  background-image: url("../images/testimonial-bg.jpg");
+  background-image: url("../images/testimonial-bgf.jpg");
 }
 .white-text h2 {
   color: #ffffff;
@@ -1597,7 +1597,7 @@ nav.navbar {
   width: 425px;
 }
 .testimonial-content::after {
-  background: rgba(0, 0, 0, 0) url("../images/testimonial-content-bg.jpg") repeat scroll 0 0 / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/testimonial-bgf.jpg") repeat scroll 0 0 / cover ;
   border-radius: 0 30px;
   content: "";
   height: 100%;
