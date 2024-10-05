@@ -114,7 +114,7 @@ foreach($results as $result)
          </div>
       
       <!--Side-Bar-->
-      <aside class="col-md-3 col-md-pull-9">
+      <!--aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
             <h5><i class="fa fa-filter" aria-hidden="true"></i> Encuentra lo que buscas </h5>
@@ -126,7 +126,7 @@ foreach($results as $result)
                   <option>Seleccionar marca</option>
 
                   <?php $sql = "SELECT * from  tblbrands ";
-$query = $dbh -> prepare($sql);
+<--$query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 $cnt=1;

@@ -65,7 +65,7 @@ error_reporting(0);
   <div class="container">
     <div class="section-header text-center">
       <h2>Encuentra Los Mejores <span>Componentes Para Ti</span></h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ad at deleniti optio quisquam aliquam magnam, similique doloribus maxime perspiciatis accusamus error quasi in impedit, aperiam, nobis explicabo? Non, est?</p>
+      <p>Bits & Bytes es una tienda especializada en la venta de componentes de computadoras, con un enfoque en proporcionar a los clientes lo necesario para ensamblar, mejorar o reparar sus equipos. Ofrecemos una amplia gama de productos, que incluyen procesadores, tarjetas gráficas, placas base, unidades de almacenamiento, memorias RAM, fuentes de poder, y más.</p>
     </div>
     <div class="row"> 
       
