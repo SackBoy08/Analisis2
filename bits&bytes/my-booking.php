@@ -11,7 +11,7 @@ else{
 <html lang="en">
 <head>
 
-<title>Portal de alquiler de coches - Mi reserva</title>
+<title>Bits&Bytes - Mi reserva</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -131,8 +131,8 @@ foreach($results as $result)
                 <div class="vehicle_title">
 
                   <h6><a href="vehical-details.php?vhid=<?php echo htmlentities($result->vid);?>"> <?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h6>
-                  <p><b>Inicio </b> <?php echo htmlentities($result->FromDate);?> <b>To </b> <?php echo htmlentities($result->ToDate);?></p>
-                  <div style="float: left"><p><b>Message:</b> <?php echo htmlentities($result->message);?> </p></div>
+                  <p><b>Fecha de reservacion </b> <?php echo htmlentities($result->FromDate);?> <b> </b> <?php echo htmlentities($result->ToDate);?></p>
+                  <div style="float: left"><p><b>Mensaje:</b> <?php echo htmlentities($result->message);?> </p></div>
                 </div>
                 <?php if($result->Status==1)
                 { ?>
@@ -158,22 +158,22 @@ foreach($results as $result)
 <h5 style="color:blue">Factura</h5>
 <table>
   <tr>
-    <th>Nombre del auto</th>
-    <th>Desde la fecha</th>
-    <th>Hasta la fecha</th>
-    <th>Total Días</th>
-    <th>Alquiler / Día</th>
+    <th>Nombre del articulo</th>
+    <th>Fecha de reserva</th>
+    <!-- <th>Hasta la fecha</th>
+    <th>Total Días</th> -->
+    <th>Total</th>
   </tr>
   <tr>
     <td><?php echo htmlentities($result->VehiclesTitle);?>, <?php echo htmlentities($result->BrandName);?></td>
      <td><?php echo htmlentities($result->FromDate);?></td>
-      <td> <?php echo htmlentities($result->ToDate);?></td>
-       <td><?php echo htmlentities($tds=$result->totaldays);?></td>
+      <!-- <td> <?php echo htmlentities($result->ToDate);?></td>
+       <td><?php echo htmlentities($tds=$result->totaldays);?></td> -->
         <td> <?php echo htmlentities($ppd=$result->PricePerDay);?></td>
   </tr>
   <tr>
-    <th colspan="4" style="text-align:center;"> Gran Total</th>
-    <th><?php echo htmlentities($tds*$ppd);?></th>
+    <th colspan="2" style="text-align:center;"> Gran Total</th>
+    <th><?php echo htmlentities($ppd);?></th>
   </tr>
 </table>
 <hr />

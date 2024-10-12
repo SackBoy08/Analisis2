@@ -38,7 +38,7 @@ $error="Tu contraseña actual es incorrecta";
 <html lang="en">
 <head>
 
-<title>Portal de alquiler de coches - Actualizar contraseña</title>
+<title>Bits&Bytes - Actualizar contraseña</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

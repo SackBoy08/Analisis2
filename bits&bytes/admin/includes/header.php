@@ -1,5 +1,5 @@
 <div class="brand clearfix">
-	<a href="dashboard.php" style="font-size: 25px;">Portal de alquiler de coches | Panel de administrador</a>  
+	<a href="dashboard.php" style="font-size: 25px;">Bites & Bytes | Panel de administrador</a>  
 		<span class="menu-btn"><i class="fa fa-bars"></i></span>
 		<ul class="ts-profile-nav">
 			

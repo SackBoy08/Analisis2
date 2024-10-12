@@ -113,8 +113,8 @@ $msg="Reserva confirmada con éxito";
 										<th>#</th>
 											<th>Nombre</th>
 											<th>Articulo</th>
-											<!-- <th>Desde la fecha</th>
-											<th>Hasta la fecha</th> -->
+											<th>Fecha de reserva</th>
+											<!-- <th>Hasta la fecha</th> -->
 											<th>Mensaje</th>
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
@@ -126,8 +126,8 @@ $msg="Reserva confirmada con éxito";
 										<th>#</th>
 										<th>Nombre</th>
 											<th>Articulo</th>
-											<!-- <th>Desde la fecha</th>
-											<th>Hasta la fecha</th> -->
+											<th>Desde la fecha</th>
+											<!-- <th>Hasta la fecha</th> -->
 											<th>Mensaje</th>
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
@@ -150,7 +150,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->FullName);?></td>
 											<td><a href="edit-vehicle.php?id=<?php echo htmlentities($result->vid);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></td>
 											<td><?php echo htmlentities($result->FromDate);?></td>
-											<td><?php echo htmlentities($result->ToDate);?></td>
+											<!-- <td><?php echo htmlentities($result->ToDate);?></td> -->
 											<td><?php echo htmlentities($result->message);?></td>
 											<td><?php 
 if($result->Status==0)

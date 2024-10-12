@@ -8,7 +8,7 @@ error_reporting(0);
 <html lang="en">
 <head>
 
-<title>Portal de alquiler de coches | Listado de autos</title>
+<title>Bits&Bytes | Listado de autos</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -59,7 +59,7 @@ error_reporting(0);
       </div>
       <ul class="coustom-breadcrumb">
         <li><a href="#">Inicio</a></li>
-        <li>Listado de autos</li>
+        <li>Listado de articulos</li>
       </ul>
     </div>
   </div>
@@ -109,11 +109,11 @@ foreach($results as $result)
           </div>
           <div class="product-listing-content">
             <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a></h5>
-            <p class="list-price">$<?php echo htmlentities($result->PricePerDay);?> Por Día</p>
+            <p class="list-price">Q<?php echo htmlentities($result->PricePerDay);?> Por Unidad</p>
             <ul>
-              <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> asientos</li>
+              <!-- <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity);?> asientos</li>
               <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear);?> modelo</li>
-              <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li>
+              <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType);?></li> -->
             </ul>
             <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>" class="btn">Ver Detalles <span class="angle_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
           </div>
@@ -125,13 +125,13 @@ foreach($results as $result)
       <aside class="col-md-3 col-md-pull-9">
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-filter" aria-hidden="true"></i> Encuentra tu coche </h5>
+            <h5><i class="fa fa-filter" aria-hidden="true"></i> Encuentra el articulo </h5>
           </div>
           <div class="sidebar_filter">
             <form action="#" method="get">
               <div class="form-group select">
                 <select class="form-control">
-                  <option>Select Brand</option>
+                  <option>Selecciona la marca</option>
 
                   <?php $sql = "SELECT * from  tblbrands ";
 $query = $dbh -> prepare($sql);
@@ -148,16 +148,16 @@ foreach($results as $result)
                 </select>
               </div>
               <div class="form-group select">
-                <select class="form-control">
+                <!-- <select class="form-control">
                   <option>Seleccione el tipo de combustible</option>
 <option value="Petrol">Petroleo</option>
 <option value="Diesel">Diesel</option>
 <option value="CNG">CNG</option>
-                </select>
+                </select> -->
               </div>
              
               <div class="form-group">
-                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Buscar Coche</button>
+                <button type="submit" class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i> Buscar Articulo</button>
               </div>
             </form>
           </div>
@@ -165,7 +165,7 @@ foreach($results as $result)
 
         <div class="sidebar_widget">
           <div class="widget_heading">
-            <h5><i class="fa fa-car" aria-hidden="true"></i> Coches listados recientemente</h5>
+            <h5><i aria-hidden="true"></i> Articulos mas recientes</h5>
           </div>
           <div class="recent_addedcars">
             <ul>
@@ -182,7 +182,7 @@ foreach($results as $result)
               <li class="gray-bg">
                 <div class="recent_post_img"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><img src="admin/img/vehicleimages/<?php echo htmlentities($result->Vimage1);?>" alt="image"></a> </div>
                 <div class="recent_post_title"> <a href="vehical-details.php?vhid=<?php echo htmlentities($result->id);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></a>
-                  <p class="widget_price">$<?php echo htmlentities($result->PricePerDay);?> Por Día</p>
+                  <p class="widget_price">Q<?php echo htmlentities($result->PricePerDay);?> Por Unidad</p>
                 </div>
               </li>
               <?php }} ?>

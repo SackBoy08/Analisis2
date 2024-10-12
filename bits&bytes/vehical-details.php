@@ -56,7 +56,7 @@ echo "<script>alert('Algo salió mal. Inténtalo de nuevo');</script>";
 <html lang="es">
 <head>
 
-<title>Alquiler de coches | Detalles del vehículo</title>
+<title>Bits&Bytes | Detalles del articulo</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
@@ -138,7 +138,7 @@ $_SESSION['brndid']=$result->bid;
       </div>
       <div class="col-md-3">
         <div class="price_info">
-          <p>Q<?php echo htmlentities($result->PricePerDay);?> </p>Por Día
+          <p>Q<?php echo htmlentities($result->PricePerDay);?> </p>Pago en efectivo, tarjeta o visacuotas
          
         </div>
       </div>
@@ -148,7 +148,7 @@ $_SESSION['brndid']=$result->bid;
         <div class="main_features">
           <ul>
           
-            <li> <i class="fa fa-calendar" aria-hidden="true"></i>
+            <!--li> <i class="fa fa-calendar" aria-hidden="true"></i>
               <h5><?php echo htmlentities($result->ModelYear);?></h5>
               <p>Reg.Año</p>
             </li>
@@ -159,7 +159,7 @@ $_SESSION['brndid']=$result->bid;
        
             <li> <i class="fa fa-user-plus" aria-hidden="true"></i>
               <h5><?php echo htmlentities($result->SeatingCapacity);?></h5>
-              <p>Asientos</p>
+              <p>Asientos</p-->
             </li>
           </ul>
         </div>
@@ -167,16 +167,17 @@ $_SESSION['brndid']=$result->bid;
           <div class="listing_detail_wrap"> 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs gray-bg" role="tablist">
-              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Descripción general del vehículo </a></li>
+              <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Descripción general del articulo </a></li>
           
-              <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
+              <!--<li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
             </ul>
             
             <!-- Tab panes -->
             <div class="tab-content"> 
               <!-- vehicle-overview -->
               <div role="tabpanel" class="tab-pane active" id="vehicle-overview">
-                
+                <br>
+                <br>
                 <p><?php echo htmlentities($result->VehiclesOverview);?></p>
               </div>
               
@@ -347,12 +348,12 @@ $_SESSION['brndid']=$result->bid;
           </div>
           <form method="post">
             <div class="form-group">
-              <label>Desde la fecha:</label>
-              <input type="date" class="form-control" name="fromdate" placeholder="Desde la fecha" required>
+              <label>Fecha de reserva:</label>
+              <input type="date" class="form-control" name="fromdate" placeholder="Fecha de compra" required>
             </div>
-            <div class="form-group">
+            <!--<div class="form-group">
               <label>Hasta la fecha:</label>
-              <input type="date" class="form-control" name="todate" placeholder="Hasta la fecha" required>
+              <input type="date" class="form-control" name="todate" placeholder="Hasta la fecha" required>-->
             </div>
             <div class="form-group">
               <textarea rows="4" class="form-control" name="message" placeholder="Mensaje" required></textarea>
@@ -377,7 +378,7 @@ $_SESSION['brndid']=$result->bid;
     
     <!--Similar-Cars-->
     <div class="similar_cars">
-      <h3>Coches similares</h3>
+      <h3>Articulos similares</h3>
       <div class="row">
 <?php 
 $bid=$_SESSION['brndid'];

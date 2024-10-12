@@ -8,7 +8,7 @@ include('includes/config.php');
 <html lang="es">
 <head>
 
-<title>Bits & Bytes | Detalles de la página</title>
+<title>Bits&bytes | Detalles de la página</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

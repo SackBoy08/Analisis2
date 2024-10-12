@@ -84,11 +84,10 @@ else{
 										<th>#</th>
 											<th>Nombre</th>
 											<th>No. Reserva</th>
-											<th>Vehiculo</th>
-											<th>Desde la fecha</th>
-											<!-- <th>Hasta la fecha</th> -->
+											<th>Articulo</th>
+											<th>Fecha de reserva</th>
 											<th>Estado</th>
-											<th>Fecha de publicación</th>
+											<th>Fecha de confirmacion</th>
 											<th>Acción</th>
 										</tr>
 									</thead>
@@ -97,9 +96,8 @@ else{
 										<th>#</th>
 										<th>Nombre</th>
 											<th>No. Reserva</th>
-											<th>Vehiculo</th>
-											<th>Desde la fecha</th>
-											<!-- <th>Hasta la fecha</th> -->
+											<th>Articulo</th>
+											<th>Fecha de reserva</th>
 											<th>Estado</th>
 											<th>Fecha de publicación</th>
 											<th>Acción</th>
@@ -110,7 +108,7 @@ else{
 									<?php 
 
 $status=1;
-									$sql = "SELECT tblusers.FullName,tblbrands.BrandName,tblvehicles.VehiclesTitle,tblbooking.FromDate,tblbooking.ToDate,tblbooking.message,tblbooking.VehicleId as vid,tblbooking.Status,tblbooking.PostingDate,tblbooking.id,tblbooking.BookingNumber  from tblbooking join tblvehicles on tblvehicles.id=tblbooking.VehicleId join tblusers on tblusers.EmailId=tblbooking.userEmail join tblbrands on tblvehicles.VehiclesBrand=tblbrands.id   where tblbooking.Status=:status";
+									$sql = "SELECT tblusers.FullName,tblbrands.BrandName,tblvehicles.VehiclesTitle,tblbooking.FromDate,tblbooking.VehicleId as vid,tblbooking.Status,tblbooking.PostingDate,tblbooking.id,tblbooking.BookingNumber  from tblbooking join tblvehicles on tblvehicles.id=tblbooking.VehicleId join tblusers on tblusers.EmailId=tblbooking.userEmail join tblbrands on tblvehicles.VehiclesBrand=tblbrands.id   where tblbooking.Status=:status";
 $query = $dbh -> prepare($sql);
 $query -> bindParam(':status',$status, PDO::PARAM_STR);
 $query->execute();
@@ -126,7 +124,6 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->BookingNumber);?></td>
 											<td><a href="edit-vehicle.php?id=<?php echo htmlentities($result->vid);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></td>
 											<td><?php echo htmlentities($result->FromDate);?></td>
-											<td><?php echo htmlentities($result->ToDate);?></td>
 											<td><?php 
 if($result->Status==0)
 {

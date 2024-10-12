@@ -34,7 +34,7 @@ $msg="Perfil actualizado con éxito";
 <html lang="es">
 <head>
 
-<title>Portal de alquiler de coches | Mi perfil</title>
+<title>Bits&Bytes | Mi perfil</title>
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->

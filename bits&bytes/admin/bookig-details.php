@@ -160,7 +160,7 @@ foreach($results as $result)
 											<tr>											
 											<th>Nombre del Articulo</th>
 											<td><a href="edit-vehicle.php?id=<?php echo htmlentities($result->vid);?>"><?php echo htmlentities($result->BrandName);?> , <?php echo htmlentities($result->VehiclesTitle);?></td>
-											<th>Fecha para registrarse</th>
+											<th>Fecha de registro</th>
 											<td><?php echo htmlentities($result->PostingDate);?></td>
 										</tr>
 										<!-- <tr>
@@ -176,8 +176,7 @@ foreach($results as $result)
 	<td><?php echo htmlentities($ppdays=$result->PricePerDay);?></td>
 </tr> -->
 <tr>
-	<th colspan="3" style="text-align:center">Total</th>
-	<td><?php echo htmlentities($tdays*$ppdays);?></td>
+	
 </tr>
 <tr>
 <th>Estado de la reservación</th>
@@ -192,8 +191,8 @@ echo htmlentities('Confirmado');
  	echo htmlentities('Cancelado');
  }
 										?></td>
-										<th>Fecha de última actualización</th>
-										<td><?php echo htmlentities($result->LastUpdationDate);?></td>
+										<th colspan="1" style="text-align:center">Total</th>
+										<td><?php echo htmlentities($ppdays);?></td>
 									</tr>
 
 									<?php if($result->Status==0){ ?>
