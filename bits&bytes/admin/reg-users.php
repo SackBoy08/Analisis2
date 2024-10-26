@@ -98,7 +98,7 @@ $msg="Datos de la página actualizados exitosamente";
 												<th> Nombre</th>
 											<th>Correo </th>
 											<th>No Contacto</th>
-										<th>DOB</th>
+										<!-- <th>DOB</th> -->
 										<th>Dirección</th>
 										<th>Ciudad</th>
 										<th>Pais</th>
@@ -112,7 +112,7 @@ $msg="Datos de la página actualizados exitosamente";
 											<th> Nombre</th>
 											<th>Correo </th>
 											<th>No Contacto</th>
-										<th>DOB</th>
+										<!-- <th>DOB</th> -->
 										<th>Dirección</th>
 										<th>Ciudad</th>
 										<th>Pais</th>
@@ -136,7 +136,7 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->FullName);?></td>
 											<td><?php echo htmlentities($result->EmailId);?></td>
 											<td><?php echo htmlentities($result->ContactNo);?></td>
-	<td><?php echo htmlentities($result->dob);?></td>
+	<!-- <td><?php echo htmlentities($result->dob);?></td> -->
 											<td><?php echo htmlentities($result->Address);?></td>
 											<td><?php echo htmlentities($result->City);?></td>
 											<td><?php echo htmlentities($result->Country);?></td>

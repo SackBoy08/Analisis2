@@ -1,0 +1,19 @@
+{
+    "name": "sack/cambiocontra",
+    "description": "Prueba para realizar cambio de contraseña exitoso",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "9.5",
+        "codeception/codeception": "^4.2",
+        "codeception/module-phpbrowser": "^2.0",
+        "codeception/module-asserts": "^2.0",
+        "codeception/module-webdriver": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
+

@@ -1,0 +1,32 @@
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+
+actor_suffix: Tester
+
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+
+suites:
+  acceptance:
+    actor: AcceptanceTester
+    modules:
+      enabled:
+        - WebDriver:
+            url: http://localhost/bits&bytes/index.php  # Ajusta esto a la URL de tu aplicación
+            browser: chrome  # O el navegador que estés utilizando
+  functional:
+    actor: FunctionalTester
+    modules:
+      enabled:
+        - \Helper\Functional
+  unit:
+    actor: UnitTester
+    modules:
+      enabled:
+        - Asserts
+

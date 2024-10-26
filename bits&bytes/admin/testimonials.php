@@ -103,7 +103,7 @@ $msg="Testimonio exitosamente activo";
 
 						<!-- Zero Configuration Table -->
 						<div class="panel panel-default">
-							<div class="panel-heading">User Testimonials</div>
+							<div class="panel-heading">Testimonios</div>
 							<div class="panel-body">
 							<?php if($error){?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } 
 				else if($msg){?><div class="succWrap"><strong>COMPLETADO</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -115,7 +115,7 @@ $msg="Testimonio exitosamente activo";
 											<th>Correo</th>
 											<th>Testimonios</th>
 											<th>Fecha de publicación</th>
-											<th>Acción</th>
+											<!-- <th>Acción</th> -->
 										</tr>
 									</thead>
 									<tfoot>
@@ -125,7 +125,7 @@ $msg="Testimonio exitosamente activo";
 											<th>Correo</th>
 											<th>Testimonios</th>
 											<th>Fecha de publicación</th>
-											<th>Acción</th>
+											<!-- <th>Acción</th> -->
 										</tr>
 									</tfoot>
 									<tbody>
@@ -145,14 +145,14 @@ foreach($results as $result)
 											<td><?php echo htmlentities($result->UserEmail);?></td>
 											<td><?php echo htmlentities($result->Testimonial);?></td>
 											<td><?php echo htmlentities($result->PostingDate);?></td>
-										<td><?php if($result->status=="" || $result->status==0)
+										<!-- <td><?php if($result->status=="" || $result->status==0)
 {
 	?><a href="testimonials.php?aeid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Active')"> Inactivo</a>
 <?php } else {?>
 
 <a href="testimonials.php?eid=<?php echo htmlentities($result->id);?>" onclick="return confirm('Do you really want to Inactive')"> Activo</a>
 </td>
-<?php } ?></td>
+<?php } ?></td> -->
 										</tr>
 										<?php $cnt=$cnt+1; }} ?>
 										
